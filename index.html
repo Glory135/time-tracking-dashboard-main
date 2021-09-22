@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="profile">
+      <div class="profile_main">
+
+        <img class="img" src="./images/image-jeremy.png" width="70px" alt="">
+
+        <div class="small_texts report">
+          Report for
+        </div>
+        <h1 class="name">
+          <div> Jeremy</div>
+          <div> Robson</div>
+        </h1>
+
+      </div>
+
+      <div class="profile_options">
+        <div id="day" class="day small_texts profile_option_text">
+          Daily
+        </div>
+        <div id="week" class="week small_texts profile_option_text">
+          Weekly
+        </div>
+        <div id="month" class="month small_texts profile_option_text">
+          Monthly
+        </div>
+      </div>
+    </div>
+
+    <div class="cards work">
+      <div class="main_card ">
+        <img class="card_img" src="./images/icon-work.svg" alt="">
+      </div>
+      <div class="sub_card">
+        <div>
+          Work <span class="dot"> <img class="dot_img" src="./images/icon-ellipsis.svg" alt=""></span>
+        </div>
+
+        <div class="time">
+          <h1> <span id="work_cur"></span>hrs</h1>
+          <p class="small_texts time_small">
+            <span id="period"></span>
+            -
+            <span id="work_prev"></span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards play">
+      <div class="main_card ">
+        <img class="card_img" src="./images/icon-play.svg" alt="">
+      </div>
+      <div class="sub_card">
+        <div>
+          Play <span class="dot"> <img class="dot_img" src="./images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time">
+          <h1> <span id="play_cur"></span>hrs</h1>
+          <p class="small_texts time_small">
+            <span id="period2"></span>
+            -
+            <span id="play_prev"></span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards study">
+      <div class="main_card ">
+        <img class="card_img" src="./images/icon-study.svg" alt="">
+      </div>
+      <div class="sub_card">
+        <div>
+          Study <span class="dot"> <img class="dot_img" src="./images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time">
+          <h1> <span id="study_cur"></span>hrs</h1>
+          <p class="small_texts time_small">
+            <span id="period3"></span>
+            -
+            <span id="study_prev"></span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards exercise">
+      <div class="main_card ">
+        <img class="card_img" src="./images/icon-exercise.svg" alt="">
+      </div>
+      <div class="sub_card">
+        <div>
+          Exercise <span class="dot"> <img class="dot_img" src="./images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time">
+          <h1> <span id="exercise_cur"></span>hrs </h1>
+          <p class="small_texts time_small">
+            <span id="period4"></span>
+            -
+            <span id="exercise_prev"></span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards social">
+      <div class="main_card ">
+        <img class="card_img" src="./images/icon-social.svg" alt="">
+      </div>
+      <div class="sub_card">
+        <div>
+          Social <span class="dot"> <img class="dot_img" src="./images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time">
+          <h1> <span id="social_cur"></span>hrs </h1>
+          <p class="small_texts time_small">
+            <span id="period5"></span>
+            -
+            <span id="social_prev"></span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cards self_care">
+      <div class="main_card ">
+        <img class="card_img" src="./images/icon-self-care.svg" alt="">
+      </div>
+      <div class="sub_card">
+        <div>
+          Self Care <span class="dot"> <img class="dot_img" src="./images/icon-ellipsis.svg" alt=""></span>
+        </div>
+        <div class="time">
+          <h1> <span id="self_care_cur"></span>hrs </h1>
+          <p class="small_texts time_small">
+            <span id="period6"></span>
+            -
+            <span id="self_care_prev"></span>hrs
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class=" attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Glory</a>.
+  </div>
+  <script src='./index.js'>
+  </script>
+</body>
+
+</html>

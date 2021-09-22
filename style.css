@@ -1,0 +1,172 @@
+body{
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;
+   color: white; 
+   font-family: Rubik;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.active{
+    color: white;
+}
+
+.container{
+    height: 95vh;
+    width: 70vw;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 25px;
+   align-content: center;
+   justify-content: center;
+}
+.container > *:first-child {
+    grid-row: 1/ span 2;
+}
+
+.profile{
+    background-color: hsl(235, 46%, 20%);
+    border-radius:  20px;
+}
+
+.profile_main{
+     height: 40vh;
+     background-color:  hsl(246, 80%, 60%);
+     padding: 30px;
+     border-radius: 20px;
+}
+.name{
+    font-weight: 50;
+}
+
+.profile_options{
+    height: 13vh;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px ;
+    padding: 20px;
+}  
+
+.profile_option_text{
+    margin-bottom: 20px;
+}
+
+.profile_option_text:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.img{
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.small_texts{
+    font-size: 12px;
+    color: #A7ACEE;
+}
+
+
+/* cards */
+.cards{
+    border-radius: 15px;
+     height: 190px;
+}
+.main_card{
+    height: 50px;
+    overflow: hidden;
+    border-radius: 15px 15px 0  0 ;
+}
+.card_img{
+    margin-left:130px ;
+}
+.sub_card{
+    height: 110px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    padding: 20px;
+}
+.sub_card:hover{
+    transition: 0.5s;
+    background-color: hsl(235, 45%, 61%);
+    cursor: pointer;
+}
+.dot{
+    float: right;
+}
+.dot_img:hover{
+  fill: white;
+}
+
+.work{
+    background-color: hsl(15, 100%, 70%);
+}
+.play{
+    background-color: hsl(195, 74%, 62%);
+}
+.study{
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise{
+     background-color:  hsl(145, 58%, 55%);
+}
+.social{
+     background-color:   hsl(264, 64%, 52%);
+}
+.self_care{
+     background-color:   hsl(43, 84%, 65%);
+}
+
+@media(max-width:375px){
+
+    .container{
+        grid-template-columns: 1fr;
+        height: 400vh;
+    }
+
+    .profile{
+        margin-top: 750px;
+    }
+    .profile_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 15vh;
+         padding: 10px;
+    }
+    .profile_main > *:first-child {
+        grid-row: 1/ span 2;
+    }
+    .name{
+        margin-bottom: 100px;
+        font-size: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .profile_options{
+        height: 3vh ;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+
+    .cards{
+        height: 160px;
+    }
+    .sub_card{
+        height:71px;
+    }
+    .time{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .time_small{
+        text-align: right;
+    }
+
+}
